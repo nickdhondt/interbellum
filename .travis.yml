@@ -1,0 +1,9 @@
+matrix:
+  language: node_js
+  sudo: false
+  node_js:
+    - 8
+  install:
+    - cd interbellum-back && npm install
+  script:
+    - npm build && npm test
